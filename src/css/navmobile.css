@@ -1,0 +1,242 @@
+.menu-toggle {
+    display: none;
+}
+
+.mobile-hero {
+    display: none;
+}
+
+.small-logo {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    /* Add this code to your navmobile.css file */
+    /* Initially hide the menu */
+    .navbar {
+        display: none;
+        grid-template-columns: 1fr;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 0;
+        margin-bottom: 400px;
+        margin-left: 200px;
+    }
+    .logo {
+        display: none;
+    }
+    .logo-container {
+        position: relative;
+    }
+    .small-logo {
+        display: block;
+        position: absolute;
+        top: -50px;
+        /* Adjust the top position as needed */
+        left: -100px;
+        /* Adjust the left position as needed */
+        transition: transform 0.3s ease;
+        /* Add a smooth transition */
+        transform: scale(0.8);
+    }
+    ul {
+        padding: 0;
+    }
+    /* Single column layout for mobile */
+    .navbar ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0;
+    }
+    /* Align text to the left within each item */
+    .navbar ul li {
+        text-align: left;
+    }
+    /* Show the menu when 'show' class is added */
+    .navbar.show {
+        display: grid;
+    }
+    .menu-container {
+        position: relative;
+        /* Container for menu-toggle and menu-content */
+    }
+    /* Styles for the menu toggle button */
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        position: absolute;
+        top: -55px;
+        left: 90%;
+        /* Use percentage for horizontal positioning */
+        transform: translateX(-50%);
+        padding-top: 20px;
+        /* animation: zoom-in-zoom-out 2s ease infinite; */
+    }
+    .menu-toggle.active {
+        top: -10px;
+        /* Adjust the top position when active */
+    }
+    @keyframes zoom-in-zoom-out {
+        0% {
+            transform: scale(1, 1);
+        }
+        50% {
+            transform: scale(1.5, 1.5);
+        }
+        100% {
+            transform: scale(1, 1);
+        }
+    }
+    .hero-section {
+        display: none;
+    }
+    .mobile-hero {
+        display: flex;
+        width: 100%;
+        padding: 8px 24px;
+        align-items: center;
+        gap: 24px;
+        flex-wrap: nowrap;
+        background-color: #0C1359;
+        margin-top: 50px;
+    }
+    .mobile-hero h2 {
+        color: #FFF;
+        background: transparent;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 9px;
+        margin-left: 30px;
+        flex-grow: 1;
+        /* 75% */
+    }
+}
+
+@media screen and (max-width: 333px) {
+    .mobile-hero h2 {
+        color: #FFF;
+        background: transparent;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15px;
+        margin-left: 30px;
+        flex-grow: 1;
+        /* 75% */
+    }
+}
+
+
+/* frameOne */
+
+@media screen and (max-width: 767px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 20px;
+    }
+    .grid-item h2 {
+        color: #0C1359;
+        /* font-size: 52px; */
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: -60px;
+        margin-bottom: 40px;
+        /* white-space: pre-line; */
+        word-wrap: break-word;
+        max-lines: 3;
+        width: 500px;
+        flex-shrink: 1;
+    }
+    .grid-item.img-groupOne img {
+        order: 1;
+        margin-top: 60px;
+        max-width: 95%;
+        /* Adjust the percentage as needed */
+    }
+    .container {
+        position: relative;
+        margin: -10px;
+        /* overflow: hidden; */
+    }
+    .container .inner-grid {
+        margin: 100px 80px;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* gap: 90px; */
+        /* grid-gap: 98px; */
+    }
+    .mobile-grid {
+        flex-direction: column-reverse;
+        margin-left: -60px;
+    }
+    .mobile-grid .grid-item {
+        order: 2;
+    }
+    img {
+        max-width: 60%;
+        margin-left: 100px;
+    }
+    .mobile-grid .grid-item2 {
+        /* Styles for items on the right in the single column layout */
+        order: 1;
+        max-width: 100%;
+    }
+    .mobile-grid .grid-item2 h2 {
+        font-size: 30px;
+    }
+    .mobile-grid .grid-item2 .header3 {
+        font-size: 20px;
+        /* Adjust font size for small screens */
+        line-height: 1.5;
+        /* Reset line-height if needed */
+        display: -webkit-box;
+        -webkit-line-clamp: 14;
+        /* Limit to two lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-left: 2px;
+        width: 500px;
+    }
+    .card-image {
+        margin-left: -1px;
+    }
+    .grid-container .grid-item2 .list-items ul li {
+        font-size: 20px;
+        line-height: 2.0;
+    }
+    .grid-container .grid-item2 .list-items ul li::before {
+        width: 14px;
+        height: 14px;
+        /* Adjust the image size as needed */
+        /* Add some space between the image and text */
+    }
+    .grid-container .grid-item .heading1 {
+        font-size: 30px;
+    }
+    .grid-container .grid-item .heading2 {
+        font-size: 50px;
+        margin-left: 2px;
+    }
+    /* .mobile-ellipse {
+        width: 900px;
+        height: 900px;
+    } */
+}
+
+@media screen and (max-width: 487px) {
+    .grid-item h2 {
+        /* font-size: 3vw;   */
+        /* Adjust font size for smaller screens */
+        margin-top: -30px;
+        display: -webkit-box;
+        width: 280px;
+        text-size-adjust: 100%;
+    }
+}
