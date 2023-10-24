@@ -11,6 +11,7 @@ import videoicon2 from "../assets/videoicon2.jpeg";
 import civicPalm from "../assets/civicPalm.jpeg";
 import line from "./images/line.svg";
 import Footer from "../components/Footer";
+import Faqs from "./Faqs";
 export default function CivilEngagement() {
   return (
     <>
@@ -264,7 +265,8 @@ export default function CivilEngagement() {
             </div>
           </div>
         </div>
-        <div className='fourth-inner-container'>
+        <Faqs/>
+        {/* <div className='fourth-inner-container'>
           <div className='form'>
             <h3>Frequently asked questions</h3>
             <img src='' alt='' />
@@ -329,9 +331,9 @@ export default function CivilEngagement() {
               }}
             />
             <label htmlFor=''>How can one become a citizen of Nigeria?</label>
-          </div>
+          </div> */}
         </div>
-      </div>
+      {/* </div/> */}
       <Footer />
     </>
   );
