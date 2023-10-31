@@ -138,7 +138,7 @@
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
-        margin-left: 20px;
+        margin: 40px 50px 40px 10px;
     }
     .grid-item h2 {
         color: #0C1359;
@@ -146,8 +146,8 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        margin-top: -60px;
-        margin-bottom: 40px;
+        margin-top: -5px;
+        margin-bottom: 0;
         /* white-space: pre-line; */
         word-wrap: break-word;
         max-lines: 3;
@@ -156,9 +156,9 @@
     }
     .grid-item.img-groupOne img {
         order: 1;
-        margin-top: 60px;
+        margin-top: 10px;
+        margin-left: 5px;
         max-width: 95%;
-        /* Adjust the percentage as needed */
     }
     .container {
         position: relative;
@@ -166,7 +166,7 @@
         /* overflow: hidden; */
     }
     .container .inner-grid {
-        margin: 100px 80px;
+        margin: 50px 50px;
         display: grid;
         grid-template-columns: 1fr;
         /* gap: 90px; */
@@ -182,6 +182,15 @@
     img {
         max-width: 60%;
         margin-left: 100px;
+    }
+    .partners-container {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .partners-container img {
+        max-width: 60%;
+        margin-left: 15px;
     }
     .mobile-grid .grid-item2 {
         /* Styles for items on the right in the single column layout */

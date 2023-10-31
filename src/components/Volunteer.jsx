@@ -1,14 +1,6 @@
 import "../css/index.css";
 import btn from "../assets/btn.svg";
 import group6 from "../assets/groupsix.png";
-import vol1 from "../assets/vol1.jpeg";
-import vol2 from "../assets/vol2.jpeg";
-import vol3 from "../assets/vol3.jpeg";
-import vol4 from "../assets/vol4.jpeg";
-// import vol5 from "../assets/vol5.jpeg";
-// import vol6 from "../assets/vol6.jpeg";
-import vol7 from "../assets/vol7.jpeg";
-import vol8 from "../assets/vol8.jpeg";
 export default function Volunteer() {
   return (
     <div
@@ -36,18 +28,18 @@ export default function Volunteer() {
             className='frame-btn'
             style={{ backgroundColor: "#F9F8FB", marginBottom: "30px" }}>
             Get involved{" "}
-            <img src={btn} alt='' style={{ backgroundColor: "transparent" }} />
+            <img src={btn} alt='' style={{ backgroundColor: "transparent", marginLeft: "60px" }} />
           </button>
         </div>
         <div
-          className='grid-item'
+          className='groupsix'
           style={{
             backgroundColor: "#F9F8FB",
             marginTop: "60px",
             marginLeft: "160px",
             marginRight: "0px",
           }}>
-          <img src={group6} alt='' />
+          <img src={group6} alt='groupsix' />
         </div>
       </div>
     </div>

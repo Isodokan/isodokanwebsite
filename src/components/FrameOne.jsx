@@ -29,15 +29,15 @@ export default function FrameOne() {
     <div className='grid-container'>
       <div className='grid-item'>
         <h2>
-          Let's change lives & build the future <br></br>
-          <span>together</span>
+          Let's change lives & build the future 
+          <span> together</span>
         </h2>
         <h4>
           Isọdọkan envisions a world where young people grow<br></br> up in
           safe, nurturing environments.{" "}
         </h4>
         <button className='frame-btn' onClick={handleNavigation}>
-          Get involved <img src={btn} alt='' />
+          Get involved <img src={btn} alt='' style={{ marginLeft: "60px" }} />
         </button>
         {!isSmallScreen && (
           <div className='partners-container'>
@@ -52,7 +52,7 @@ export default function FrameOne() {
       </div>
       {isSmallScreen && (
         <div className='partners-container'>
-          <h5>Partnered :</h5>
+          <h5>Partnered:</h5>
           <img src={spurt} alt='step' />
           <img src={flower} alt='' className='flower' />
         </div>
