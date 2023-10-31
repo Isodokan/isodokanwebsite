@@ -35,7 +35,7 @@ export default function HowWeHelp() {
             />
           </Link>
         </div>
-        <div className='card ' style={{ marginTop: "60px" }}>
+        <div className='card'>
           <img
             src={card2}
             alt=''

@@ -15,12 +15,12 @@ export default function AboutUs() {
       }}>
       <div
         className='grid-container mobile-grid'
-        style={{ backgroundColor: "#F9F8FB", marginTop: "100px" }}>
+        style={{ backgroundColor: "#F9F8FB", marginTop: "50px" }}>
         <div className='grid-item' style={{ backgroundColor: "#F9F8FB" }}>
           <img
             src={AboutImg}
             alt='aboutus'
-            style={{ backgroundColor: "#F9F8FB" }}
+            style={{ backgroundColor: "#F9F8FB", maxWidth: "40%", marginLeft: "100px" }}
           />
         </div>
         <div
